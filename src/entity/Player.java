@@ -4,7 +4,6 @@ import main.GamePanel;
 import main.KeyHandler;
 
 import javax.imageio.ImageIO;
-import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -32,15 +31,15 @@ public class Player extends Entity {
 
     public void getPlayerImage() {
         try{
-            idle = ImageIO.read(getClass().getResourceAsStream("/My2DGame_materials/Player_Idle.png"));
-            up1 = ImageIO.read(getClass().getResourceAsStream("/My2DGame_materials/Player_Up_1.png"));
-            up2 = ImageIO.read(getClass().getResourceAsStream("/My2DGame_materials/Player_Up_2.png"));
-            down1 = ImageIO.read(getClass().getResourceAsStream("/My2DGame_materials/Player_Down_1.png"));
-            down2 = ImageIO.read(getClass().getResourceAsStream("/My2DGame_materials/Player_Down_2.png"));
-            left1 = ImageIO.read(getClass().getResourceAsStream("/My2DGame_materials/Player_Left_1.png"));
-            left2 = ImageIO.read(getClass().getResourceAsStream("/My2DGame_materials/Player_Left_2.png"));
-            right1 = ImageIO.read(getClass().getResourceAsStream("/My2DGame_materials/Player_Right_1.png"));
-            right2 = ImageIO.read(getClass().getResourceAsStream("/My2DGame_materials/Player_Right_2.png"));
+            idle = ImageIO.read(getClass().getResourceAsStream("/player/Player_Idle.png"));
+            up1 = ImageIO.read(getClass().getResourceAsStream("/player/Player_Up_1.png"));
+            up2 = ImageIO.read(getClass().getResourceAsStream("/player/Player_Up_2.png"));
+            down1 = ImageIO.read(getClass().getResourceAsStream("/player/Player_Down_1.png"));
+            down2 = ImageIO.read(getClass().getResourceAsStream("/player/Player_Down_2.png"));
+            left1 = ImageIO.read(getClass().getResourceAsStream("/player/Player_Left_1.png"));
+            left2 = ImageIO.read(getClass().getResourceAsStream("/player/Player_Left_2.png"));
+            right1 = ImageIO.read(getClass().getResourceAsStream("/player/Player_Right_1.png"));
+            right2 = ImageIO.read(getClass().getResourceAsStream("/player/Player_Right_2.png"));
         }catch(IOException e){
             e.printStackTrace();
         }
